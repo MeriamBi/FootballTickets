@@ -18,7 +18,7 @@ const dbName = 'examencoteserveur2223sp';
 mongoose.set('debug', true);
 mongoose.Promise = global.Promise;
 
-mongoose.connect(`${mongo_uri}/${dbName}`)
+mongoose.connect(`mongodb://myapptestexam-server:rgBOvi9LZ5rzJRJ0iK3vFYD2pIX0PtIAYBZ0KubnAQGCJwqgaN8y6pgEfecnzhB9rr9OImEHGqWWACDbqvQwCg==@myapptestexam-server.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@myapptestexam-server/myapptestexam-database`)
   .then(() => {
     console.log(`Connected to ${dbName}`);
   })
